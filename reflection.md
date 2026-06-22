@@ -42,11 +42,16 @@ When asking about the High/Low logic error, Copilot suggested that it was becaus
 
 - How did you decide whether a bug was really fixed?
 
-
+I opened the game and manually ran several test cases. Different inputs for each test case, or a different approach (e.g. new game in the middle of a game rather than a finished one).
 
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+
+I started up a game and entered a non-integer value to see if the program would break. However, I got an output that states it is not an integer but still logs in the guess as an attempt. This seems like acceptable logic so I left it as is.
+
 - Did AI help you design or understand any tests? How?
+
+Yes, I asked Copilot to create and run pytest rests for me. Since I was using a virtual environment, the command that is ran for these tests is slightly different and Copilot helped with that. These tests were fairly simple however and was something I could do manually.
 
 ---
 
@@ -54,11 +59,21 @@ When asking about the High/Low logic error, Copilot suggested that it was becaus
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I would say that Streamlit reruns is very similar to refreshing a page, but only refreshes the program. It goes back to the first line as if entering a fresh state. 
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+  I am a fan of accepting AI suggestions and then running the program to see if it works. If it doesn't I can always reset the changes. If it does, then I move forward.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+I think my prompting was a bit too broad and didn't go step by step. This lead to some misleading responses and caused me to go back. I would definitely focus more on figuring out what is a good prompt that returns concise and exact responses.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+This was my first time using an AI Agent rather than referencing a chat model like ChatGPT or Gemini. I learned that this is a very powerful tool that is able to look directly into my code and modify it as needed. Using AI for coding is more than just asking an LLM about what's wrong and how to fix it.
