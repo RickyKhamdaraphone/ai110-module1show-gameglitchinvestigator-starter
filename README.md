@@ -26,18 +26,26 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+
+This game gives a secret number that the user must guess in a fixed number of attempts. If the user guesses the secret, they win. If they run out of attempts, they lose.
+
 - [ ] Detail which bugs you found.
+
+Found a bug that caused incorrect output for hints as well as a dysfunctional new game button.
+
 - [ ] Explain what fixes you applied.
+
+Made logic for both hint output and new game creation function properly.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 50
+2. Game returns "Too Low"
+3. User enters a guess of 75 which is "Too High"
+4. Score updates after each guess
+5. Gme ends after guessing correctly
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
